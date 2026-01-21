@@ -1,3 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+    
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
 *{
     margin: 0;
     padding: 0;
@@ -63,6 +74,12 @@
     rgba(251, 9, 180, 1),
     rgba(145, 0, 248, 1));
 }
+@media (max-width: 768px) {
+  .navbar {
+   flex-direction: column;
+  }
+}
+
 .banner{
     
     background-color: #1A0B2E;
@@ -175,4 +192,102 @@ background:linear-gradient(to right,
   font-size: 12px;
   letter-spacing: 1px;
   color: #cfcfcf;
+}
+@media (max-width: 768px) {
+  .num-item {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+.grid{
+    border: 2px solid red;
+    /* height: 600px;
+    width: 100%; */
+    max-width: 1600px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,180px);
+    gap: 20px;
+    background: #1A0B2E;
+    color: aliceblue;
+    margin: 0 3px 2px 30px;
+    padding: 20px 20px;
+    border-radius: 40px;
+}
+.grid-title{
+    background: #1a0633;
+  padding: 10px 20px;
+  color: white;
+}
+.title{
+    text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+  
+}
+.grid-h3{
+    font-weight: bolder;
+    font-size: 1rem;
+    padding: 10px;
+}
+.grid-p{
+    color: rgba(255, 255, 255, 1);
+    opacity: 60%;
+}
+.grid img{
+
+}
+
+.grid-item1{
+    background: rgba(53, 17, 101, 0.4);
+    /* grid-column: span 1; */
+    grid-row: span 2;
+    border-radius: 25px;
+    padding: 30px;
+}
+.grid-item2{
+    background: rgba(53, 17, 101, 0.4);
+    grid-column: span 2;
+    grid-row: span 1;
+    border-radius: 25px;
+    padding: 30px;
+}
+.grid-item3{
+    background: rgba(53, 17, 101, 0.4);
+    grid-column: span 2;
+    grid-row: span 2;
+    border-radius: 25px;
+    padding: 30px;
+}
+.zap{
+    width:60px ;
+    height:60px;
+    background: linear-gradient( to right,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1));
+}
+.grid-item4{
+    background: rgba(53, 17, 101, 0.4);
+    grid-column: span 2;
+    grid-row: span 1;
+    border-radius: 25px;
+    padding: 30px;
+}
+.grid-item5{
+    background: rgba(53, 17, 101, 0.4);
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 25px;
+    padding: 30px;
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-title {
+    grid-row: span 1;
+  }
 }
