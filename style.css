@@ -166,11 +166,15 @@ background:linear-gradient(to right,
 .poscast{
     width:100%;
     background-color: #1A0B2E;
-    color: aliceblue;
+    color: rgba(255, 255, 255, 1);
     text-align: center;
     padding: 20px 30px; 
                  
 } 
+.poscast p{
+    color: rgba(255, 255, 255, 1);
+    opacity: 80%;
+}
 @media (max-width: 768px) {
   .poscast {
     width: auto;
@@ -214,7 +218,7 @@ background:linear-gradient(to right,
 }
 
 .grid{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* height: 600px;
     width: 100%; */
     max-width: 1600px;
@@ -303,4 +307,64 @@ background:linear-gradient(to right,
   .grid-title {
     grid-row: span 1;
   }
+}
+.episode{
+    color: aliceblue;
+    /* padding: 80px,40px; */
+    background: #1A0B2E;
+    /* gap:15px */
+}
+.episode-tittle{
+    text-align: center;
+   font-size: 48px;
+   margin-bottom:20px;
+
+}
+.epi-grid{
+    max-width: 1600px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr); 
+    gap: 30px;
+    margin: auto;
+}
+.epi-card{
+    background:rgba(37, 13, 68, 1) ;
+    border-radius:24px ;
+    max-width: 1600px;
+    height: 300px;
+    justify-items: center;
+}
+.epi-card:hover{
+    background-color: #1a0633;
+}
+.epi-h3{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.epi-p{
+    font-size: 16px;
+    font-weight: 400;
+     color:(255, 255, 255, 1);
+     opacity: 80%;
+}
+.epi-btn{
+    background: #1A0B2E;
+    display: flex;
+    align-items: start;
+    font-size: medium;
+    gap: 5px;
+}
+.epi-h3-p{
+    align-items: center;
+    justify-items: center;
+}
+#cc{
+    color: #00ff9c;
+    align-items:start;
+}
+@media (max-width: 576px) {
+  .epi-grid{
+    grid-template-columns: 1fr;
+  }
+  
 }
