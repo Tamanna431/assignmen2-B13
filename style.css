@@ -155,6 +155,14 @@ background:linear-gradient(to right,
     border: 1px solid rgba(0, 255, 136, 1);
     background-color: #1A0B2E;
 }
+    @media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+  }
+  .btns{
+    flex-direction: column;
+  }
+}
 .poscast{
     width:100%;
     background-color: #1A0B2E;
@@ -163,6 +171,11 @@ background:linear-gradient(to right,
     padding: 20px 30px; 
                  
 } 
+@media (max-width: 768px) {
+  .poscast {
+    width: auto;
+  }
+}
 .pod-h1{
    font-size: medium;
     font-weight: bolder;
@@ -185,7 +198,7 @@ background:linear-gradient(to right,
 }
 
 .num-item h2 span {
-  color: #00ff9c;
+  color: #00ff9c;git
 }
 
 .num-item p {
