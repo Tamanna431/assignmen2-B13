@@ -368,3 +368,55 @@ background:linear-gradient(to right,
   }
   
 }
+.host{
+    background: #1A0B2E;
+   display: flex;
+   color: aliceblue;
+   padding: 10px 30px;
+
+}
+.host-h2{
+    font-size: medium;
+    font-weight: 700;
+    text-align: center;
+}
+.h4-p{
+    align-content: center;
+    
+}
+.h4-p p{
+    color: aliceblue;
+    opacity: 80%;
+}
+.btn-a{
+    display: flex;
+    gap:10px;
+}
+.btn-ab{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  background: #1a0633;
+  /* background: linear-gradient(to right,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 60%;
+  padding-top: 10px;
+
+}
+.for{
+    align-items: center;
+}
+.footer{
+    background: url(./B13-A02-TechWave/assets/footer-bg.png);
+    max-width: 1600px;
+    height: 442;
+}
+.btn-foo{
+    display: flex;
+}
